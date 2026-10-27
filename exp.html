@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecoViz & TextWebAnalyzer • Student Experiment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .tab-btn { transition: all 0.3s; }
+        .tab-btn.active { background-color: #4f46e5; color: white; }
+        .chart-container { position: relative; height: 400px; }
+        .card { transition: transform 0.3s; }
+        .card:hover { transform: translateY(-8px); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="max-w-7xl mx-auto p-6">
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-8">
+            <div>
+                <h1 class="text-4xl font-bold text-indigo-700">RecoViz & TextWebAnalyzer</h1>
+                <p class="text-xl text-gray-600">Student Design Experiment • RecSys + Text/Web Social Media Analysis</p>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="runDemo()" 
+                        class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-2xl flex items-center gap-2">
+                    <span>🚀</span> Try Interactive Demo
+                </button>
+                <button onclick="window.location.reload()" 
+                        class="px-6 py-3 border border-gray-300 hover:bg-gray-100 font-semibold rounded-2xl">
+                    Reset
+                </button>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="flex border-b border-gray-200 mb-8 overflow-x-auto pb-2">
+            <button onclick="switchTab(0)" class="tab-btn active px-8 py-4 font-semibold text-lg rounded-t-3xl">1. Recommendation Systems</button>
+            <button onclick="switchTab(1)" class="tab-btn px-8 py-4 font-semibold text-lg rounded-t-3xl">2. Text / Web Social Media Analysis</button>
+            <button onclick="switchTab(2)" class="tab-btn px-8 py-4 font-semibold text-lg rounded-t-3xl">3. Interactive Demo</button>
+        </div>
+
+        <!-- Tab 1: Recommendation Systems -->
+        <div id="tab-0" class="tab-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Collaborative Filtering -->
+                <div class="card bg-white p-6 rounded-3xl shadow">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span>🎯</span> Collaborative Filtering
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="cfChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-600 bg-gray-100 p-4 rounded-2xl">
+                        <strong>Example:</strong> Netflix user-item matrix (10 users, 8 movies). 
+                        Color = star rating (1–5). System finds similar users and recommends.
+                    </div>
+                </div>
+
+                <!-- Content-Based -->
+                <div class="card bg-white p-6 rounded-3xl shadow">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span>📚</span> Content-Based Filtering
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="cbChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-600 bg-gray-100 p-4 rounded-2xl">
+                        <strong>Example:</strong> Word cloud of movie genres. Recommends movies with similar keywords (Action, Comedy).
+                    </div>
+                </div>
+
+                <!-- Matrix Factorization -->
+                <div class="card bg-white p-6 rounded-3xl shadow">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span>🔢</span> Matrix Factorization (Latent Factors)
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="mfChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-600 bg-gray-100 p-4 rounded-2xl">
+                        <strong>Example:</strong> Users and movies plotted in 2D latent space. Distance = predicted rating.
+                    </div>
+                </div>
+
+                <!-- Deep Learning -->
+                <div class="card bg-white p-6 rounded-3xl shadow">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span>🧠</span> Deep Learning Models
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="dlChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-600 bg-gray-100 p-4 rounded-2xl">
+                        <strong>Example:</strong> Neural Collaborative Filtering. Line chart shows RMSE dropping over epochs.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: Text / Web Social Analysis -->
+        <div id="tab-1" class="tab-content hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Text Mining -->
+                <div class="card bg-white p-6 rounded-3xl shadow">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span>📝</span> Text Mining & NLP
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="textChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-600 bg-gray-100 p-4 rounded-2xl">
+                        <strong>Example:</strong> Word cloud from Twitter reviews. Shows top 50 words and sentiment.
+                    </div>
+                </div>
+
+                <!-- Topic Modeling -->
+                <div class="card bg-white p-6 rounded-3xl shadow">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span>🗣️</span> Topic Modeling (LDA / BERTopic)
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="topicChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-600 bg-gray-100 p-4 rounded-2xl">
+                        <strong>Example:</strong> Bubble chart of topics in web forums. Size = frequency, color = sentiment.
+                    </div>
+                </div>
+
+                <!-- Sentiment Analysis -->
+                <div class="card bg-white p-6 rounded-3xl shadow">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span>😊</span> Sentiment Analysis
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="sentimentChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-600 bg-gray-100 p-4 rounded-2xl">
+                        <strong>Example:</strong> Pie chart + bar chart of positive/neutral/negative posts on X (Twitter).
+                    </div>
+                </div>
+
+                <!-- Social Network Analysis -->
+                <div class="card bg-white p-6 rounded-3xl shadow">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span>🌐</span> Social Network Analysis
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="snaChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-600 bg-gray-100 p-4 rounded-2xl">
+                        <strong>Example:</strong> Force-directed graph of Twitter users. Clusters = communities.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 3: Interactive Demo -->
+        <div id="tab-2" class="tab-content hidden">
+            <div class="bg-white p-8 rounded-3xl shadow-xl">
+                <h2 class="text-3xl font-bold mb-6 text-center">Live Interactive Demo</h2>
+                <p class="text-center text-gray-600 mb-8">Upload your own data or use sample — see real-time visualization!</p>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Reco Demo -->
+                    <div>
+                        <h3 class="font-bold text-xl mb-4 flex items-center gap-2">
+                            <span>🎯</span> Recommendation System Demo
+                        </h3>
+                        <div class="bg-gray-50 p-6 rounded-3xl">
+                            <label class="block text-sm font-medium mb-2">Toy Dataset (10 users, 5 movies)</label>
+                            <button onclick="runRecoDemo()" 
+                                    class="w-full py-4 bg-indigo-600 text-white font-semibold rounded-2xl hover:bg-indigo-700">
+                                Generate Recommendations + Heatmap
+                            </button>
+                        </div>
+                        <div class="mt-6">
+                            <canvas id="recoCanvas" class="w-full" height="320"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Text Demo -->
+                    <div>
+                        <h3 class="font-bold text-xl mb-4 flex items-center gap-2">
+                            <span>📝</span> Text Analysis Demo
+                        </h3>
+                        <div class="bg-gray-50 p-6 rounded-3xl">
+                            <input id="textUpload" type="file" accept=".csv,.txt" class="block w-full mb-4">
+                            <button onclick="runTextDemo()" 
+                                    class="w-full py-4 bg-emerald-600 text-white font-semibold rounded-2xl hover:bg-emerald-700">
+                                Analyze Sample Tweets (Word Cloud + Sentiment)
+                            </button>
+                        </div>
+                        <div class="mt-6">
+                            <canvas id="textCanvas" class="w-full" height="320"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tailwind script
+        function initTailwind() {
+            tailwind.config = { content: ["*"] };
+        }
+        window.onload = initTailwind;
+
+        let cfChart, cbChart, mfChart, dlChart;
+        let textChart, topicChart, sentimentChart, snaChart;
+        let recoCtx, textCtx;
+
+        // ====================== TAB SWITCH ======================
+        function switchTab(n) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(`tab-${n}`).classList.remove('hidden');
+            
+            document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+                if (i === n) {
+                    btn.classList.add('active', 'bg-indigo-600', 'text-white');
+                } else {
+                    btn.classList.remove('active', 'bg-indigo-600', 'text-white');
+                }
+            });
+        }
+
+        // ====================== CHARTS (Recommendation Systems) ======================
+        function createRecommendationCharts() {
+            // Collaborative Filtering Heatmap
+            const cfData = {
+                labels: ['User1', 'User2', 'User3', 'User4', 'User5', 'User6', 'User7', 'User8', 'User9', 'User10'],
+                datasets: [{
+                    label: 'Movie Ratings',
+                    data: [4.2, 2.8, 4.5, 3.9, 5, 3.2, 4.8, 2.5, 4.9, 3.7],
+                    backgroundColor: '#3b82f6'
+                }]
+            };
+            const cfCtx = document.getElementById('cfChart').getContext('2d');
+            cfChart = new Chart(cfCtx, {
+                type: 'heatmap',
+                data: cfData,
+                options: { responsive: true, plugins: { legend: { display: false } } }
+            });
+
+            // Content-Based Word Cloud (fake bar)
+            cbChart = new Chart(document.getElementById('cbChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Action', 'Comedy', 'Drama', 'SciFi', 'Horror'],
+                    datasets: [{ label: 'Similarity Score', data: [85, 72, 45, 68, 30], backgroundColor: '#10b981' }]
+                },
+                options: { responsive: true }
+            });
+
+            // Matrix Factorization Scatter
+            mfChart = new Chart(document.getElementById('mfChart'), {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: 'Users',
+                        data: [{x: 0.1, y: 0.3}, {x: 0.4, y: 0.6}, {x: 0.7, y: 0.2}],
+                        backgroundColor: '#8b5cf6'
+                    }, {
+                        label: 'Movies',
+                        data: [{x: 0.2, y: 0.5}, {x: 0.5, y: 0.8}, {x: 0.9, y: 0.4}],
+                        backgroundColor: '#ec4899'
+                    }]
+                },
+                options: { responsive: true }
+            });
+
+            // Deep Learning Epochs
+            dlChart = new Chart(document.getElementById('dlChart'), {
+                type: 'line',
+                data: {
+                    labels: [1, 5, 10, 20, 50, 100],
+                    datasets: [{ label: 'RMSE', data: [1.2, 0.85, 0.65, 0.52, 0.48, 0.47], borderColor: '#f59e0b' }]
+                },
+                options: { responsive: true }
+            });
+        }
+
+        // ====================== CHARTS (Text/Web Social) ======================
+        function createTextWebCharts() {
+            // Text Mining Word Cloud
+            textChart = new Chart(document.getElementById('textChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['AI', 'Twitter', 'Tech', 'Review', 'Update', 'Launch', 'Bug', 'Help'],
+                    datasets: [{ label: 'Frequency', data: [92, 78, 65, 54, 48, 42, 38, 35], backgroundColor: '#6366f1' }]
+                },
+                options: { responsive: true }
+            });
+
+            // Topic Modeling Bubble
+            topicChart = new Chart(document.getElementById('topicChart'), {
+                type: 'bubble',
+                data: {
+                    datasets: [
+                        { label: 'Topic 1', data: [{x: 50, y: 70, r: 28}], backgroundColor: '#ef4444' },
+                        { label: 'Topic 2', data: [{x: 30, y: 40, r: 35}], backgroundColor: '#eab308' },
+                        { label: 'Topic 3', data: [{x: 80, y: 55, r: 22}], backgroundColor: '#22c55e' }
+                    ]
+                },
+                options: { responsive: true }
+            });
+
+            // Sentiment Pie
+            sentimentChart = new Chart(document.getElementById('sentimentChart'), {
+                type: 'pie',
+                data: {
+                    labels: ['Positive', 'Neutral', 'Negative'],
+                    datasets: [{ data: [65, 20, 15], backgroundColor: ['#22c55e', '#eab308', '#ef4444'] }]
+                },
+                options: { responsive: true }
+            });
+
+            // Social Network Force Graph (simple)
+            snaChart = new Chart(document.getElementById('snaChart'), {
+                type: 'line',
+                data: {
+                    labels: ['User A', 'User B', 'User C', 'User D', 'User E'],
+                    datasets: [{
+                        label: 'Interactions',
+                        data: [1, 3, 2, 5, 4],
+                        borderColor: '#8b5cf6',
+                        tension: 0.3
+                    }]
+                },
+                options: { responsive: true }
+            });
+        }
+
+        // ====================== INTERACTIVE DEMO ======================
+        function runRecoDemo() {
+            const canvas = document.getElementById('recoCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Simple fake heatmap
+            const users = ['U1','U2','U3','U4','U5'];
+            const movies = ['M1','M2','M3','M4','M5'];
+            const data = [
+                [4,2,5,3,4],
+                [3,5,2,4,3],
+                [5,3,4,2,5],
+                [2,4,3,5,2],
+                [4,5,2,3,4]
+            ];
+            
+            const cellW = canvas.width / 5;
+            const cellH = canvas.height / 5;
+            
+            users.forEach((u, i) => {
+                movies.forEach((m, j) => {
+                    const val = data[i][j];
+                    const color = `hsl(${val * 30}, 100%, 60%)`;
+                    ctx.fillStyle = color;
+                    ctx.fillRect(j * cellW, i * cellH, cellW, cellH);
+                    ctx.strokeStyle = '#fff';
+                    ctx.strokeRect(j * cellW, i * cellH, cellW, cellH);
+                });
+            });
+            
+            // Add labels
+            ctx.fillStyle = '#111';
+            ctx.font = 'bold 12px Inter';
+            users.forEach((u,i) => ctx.fillText(u, 10, (i+1)*cellH - 10));
+            ctx.save();
+            ctx.rotate(-Math.PI/2);
+            ctx.fillText('Movies', -canvas.height/2, -20);
+            ctx.restore();
+            
+            confetti({ particleCount: 80, spread: 70, origin: { y: 0.8 } });
+            alert('✅ Demo generated! (Heatmap shows predicted ratings)');
+        }
+
+        function runTextDemo() {
+            const canvas = document.getElementById('textCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Simple word cloud simulation
+            const words = ['AI', 'Twitter', 'Tech', 'Review', 'Launch', 'Bug', 'Help'];
+            const sizes = [45, 38, 32, 28, 25, 22, 20];
+            const colors = ['#ef4444', '#f97316', '#eab308', '#84cc16', '#22c55e', '#14b8a6', '#6366f1'];
+            
+            let x = canvas.width/2, y = canvas.height/2;
+            ctx.font = 'bold 18px Inter';
+            
+            words.forEach((word, i) => {
+                ctx.fillStyle = colors[i];
+                ctx.fillText(word, x - word.length*4, y + i*25);
+            });
+            
+            confetti({ particleCount: 120, spread: 90, origin: { y: 0.9 } });
+            alert('✅ Text demo complete! Word cloud + sentiment ready.');
+        }
+
+        // ====================== INIT ======================
+        function initApp() {
+            createRecommendationCharts();
+            createTextWebCharts();
+            switchTab(0);
+            console.log('%c✅ RecoViz & TextWebAnalyzer ready! Enjoy the experiment 🚀', 'color:#4f46e5;font-weight:bold');
+        }
+        window.onload = initApp;
+    </script>
+</body>
+</html>

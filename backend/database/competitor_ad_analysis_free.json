@@ -1,0 +1,1169 @@
+{
+  "timestamp": "2025-08-22 11:58:20",
+  "total_ads_analyzed": 16,
+  "analysis_method": "Free NLP + Local Processing + SQLite Storage",
+  "database_file": "ad_analysis.db",
+  "detailed_results": [
+    {
+      "ad_data": {
+        "platform": "LinkedIn",
+        "type": "Content Post",
+        "title": "Become a Data Scientist Learning Path",
+        "description": "Learn about the history, roles, career paths, and industry-recognized certifications in the field of data science and analytics. 44,966 viewers Released Feb 10, ...",
+        "link": "https://www.linkedin.com/learning/paths/become-a-data-scientist",
+        "position": 1,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 30,
+          "char_count": 202,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Professional"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 5.3,
+          "cta_strength": "Weak",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [
+            "authority"
+          ],
+          "persuasion_elements": 1
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.4,
+          "estimated_daily_impressions": 8842,
+          "estimated_cpc_inr": 38.9,
+          "quality_score_prediction": 4.6,
+          "engagement_potential": "medium"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [
+            "certification",
+            "career"
+          ],
+          "target_audience": "professionals",
+          "competitive_advantages": [
+            "Certification",
+            "Career Support"
+          ]
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "data",
+            "become",
+            "scientist",
+            "learning",
+            "path"
+          ],
+          "keyword_density": 13.3,
+          "missing_opportunities": [
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor",
+            "live classes"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'"
+        ]
+      },
+      "db_id": 33
+    },
+    {
+      "ad_data": {
+        "platform": "LinkedIn",
+        "type": "Content Post",
+        "title": "Data Science Professional Certificate by KNIME",
+        "description": "Unlock the power of data science with this comprehensive professional certificate. Gain essential skills to drive business insights, make data-driven ...",
+        "link": "https://www.linkedin.com/learning/paths/data-science-professional-certificate-by-knime",
+        "position": 2,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 27,
+          "char_count": 200,
+          "reading_level": "Difficult"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "POSITIVE",
+          "confidence_score": 0.8,
+          "emotional_tone": "Professional"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 7.5,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.63,
+          "estimated_daily_impressions": 8227,
+          "estimated_cpc_inr": 17.24,
+          "quality_score_prediction": 7.0,
+          "engagement_potential": "high"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Premium",
+          "key_selling_points": [
+            "certificate",
+            "certificate"
+          ],
+          "target_audience": "professionals",
+          "competitive_advantages": [
+            "Certification"
+          ]
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "data",
+            "science",
+            "professional",
+            "certificate",
+            "knime"
+          ],
+          "keyword_density": 14.8,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 34
+    },
+    {
+      "ad_data": {
+        "platform": "LinkedIn",
+        "type": "Content Post",
+        "title": "Career Essentials in Data Analysis by Microsoft and LinkedIn",
+        "description": "This course covers foundational data analysis skills such as thinking like an analyst, gathering useful data, SQL queries, data cleaning, and more.",
+        "link": "https://www.linkedin.com/learning/paths/career-essentials-in-data-analysis-by-microsoft-and-linkedin",
+        "position": 3,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 31,
+          "char_count": 208,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 2.8,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.15,
+          "estimated_daily_impressions": 6813,
+          "estimated_cpc_inr": 17.15,
+          "quality_score_prediction": 3.5,
+          "engagement_potential": "low"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [
+            "career"
+          ],
+          "target_audience": "professionals",
+          "competitive_advantages": [
+            "Career Support"
+          ]
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "data",
+            "analysis",
+            "career",
+            "essentials",
+            "microsoft"
+          ],
+          "keyword_density": 12.9,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Increase engagement by adding power words like 'certified', 'expert', or 'proven'",
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 35
+    },
+    {
+      "ad_data": {
+        "platform": "LinkedIn",
+        "type": "Content Post",
+        "title": "Want to Make $100K+ in Data Science? Start with These 6 ...",
+        "description": "Top 6 Courses to Jump‑Start Your Path: IBM Data Science Professional Certificate – Master Python, SQL, machine learning, data visualization, ...",
+        "link": "https://www.linkedin.com/pulse/want-make-100k-data-science-start-6-free-kfbhf",
+        "position": 4,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 33,
+          "char_count": 204,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "POSITIVE",
+          "confidence_score": 0.9,
+          "emotional_tone": "Professional"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 8.0,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.76,
+          "estimated_daily_impressions": 10478,
+          "estimated_cpc_inr": 18.79,
+          "quality_score_prediction": 7.7,
+          "engagement_potential": "high"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Premium",
+          "key_selling_points": [
+            "certificate"
+          ],
+          "target_audience": "beginners",
+          "competitive_advantages": [
+            "Certification"
+          ]
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "data",
+            "science",
+            "start",
+            "want",
+            "make"
+          ],
+          "keyword_density": 12.1,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 36
+    },
+    {
+      "ad_data": {
+        "platform": "LinkedIn",
+        "type": "Content Post",
+        "title": "Anaconda Python for Data Science Professional Certificate",
+        "description": "5 courses 10 hours of content · Explore the basics of data analysis. · Practice using Python with hands-on projects. · Learn how to scale your work with ...",
+        "link": "https://www.linkedin.com/learning/paths/anaconda-python-for-data-science-professional-certificate",
+        "position": 5,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 36,
+          "char_count": 214,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "POSITIVE",
+          "confidence_score": 0.8,
+          "emotional_tone": "Professional"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 7.6,
+          "cta_strength": "Medium",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 1.19,
+          "estimated_daily_impressions": 8990,
+          "estimated_cpc_inr": 24.68,
+          "quality_score_prediction": 7.0,
+          "engagement_potential": "high"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Premium",
+          "key_selling_points": [
+            "10 hours",
+            "certificate",
+            "hands-on"
+          ],
+          "target_audience": "beginners",
+          "competitive_advantages": [
+            "Certification",
+            "Practical Learning"
+          ]
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "python",
+            "data",
+            "anaconda",
+            "science",
+            "professional"
+          ],
+          "keyword_density": 16.7,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 37
+    },
+    {
+      "ad_data": {
+        "platform": "Bing",
+        "type": "Search Ad",
+        "title": "Online Coding Course - Coding Course - Largest US Tech Bootcamp",
+        "description": "",
+        "link": "https://generalassemb.ly › Software › Coding",
+        "position": 1,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 11,
+          "char_count": 64,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 1.0,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.05,
+          "estimated_daily_impressions": 4824,
+          "estimated_cpc_inr": 40.5,
+          "quality_score_prediction": 3.0,
+          "engagement_potential": "low"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [],
+          "target_audience": "general",
+          "competitive_advantages": []
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "coding",
+            "course",
+            "online",
+            "largest",
+            "tech"
+          ],
+          "keyword_density": 18.2,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Increase engagement by adding power words like 'certified', 'expert', or 'proven'",
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 38
+    },
+    {
+      "ad_data": {
+        "platform": "Bing",
+        "type": "Search Ad",
+        "title": "Coding Course - Coding Training - Start A Career In Coding",
+        "description": "",
+        "link": "https://itcareerswitch.co.uk",
+        "position": 2,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 11,
+          "char_count": 59,
+          "reading_level": "Easy"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 4.1,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.22,
+          "estimated_daily_impressions": 13657,
+          "estimated_cpc_inr": 24.1,
+          "quality_score_prediction": 4.5,
+          "engagement_potential": "medium"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [
+            "career"
+          ],
+          "target_audience": "beginners",
+          "competitive_advantages": [
+            "Career Support"
+          ]
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "coding",
+            "course",
+            "training",
+            "start",
+            "career"
+          ],
+          "keyword_density": 18.2,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Increase engagement by adding power words like 'certified', 'expert', or 'proven'",
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 39
+    },
+    {
+      "ad_data": {
+        "platform": "Bing",
+        "type": "Search Ad",
+        "title": "Online Courses - 14-day Money Back Guarantee",
+        "description": "",
+        "link": "https://www.coursera.org › coursera_plus",
+        "position": 3,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 7,
+          "char_count": 45,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 4.2,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.22,
+          "estimated_daily_impressions": 9807,
+          "estimated_cpc_inr": 32.93,
+          "quality_score_prediction": 4.6,
+          "engagement_potential": "medium"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [],
+          "target_audience": "general",
+          "competitive_advantages": []
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "online",
+            "courses",
+            "day",
+            "money",
+            "back"
+          ],
+          "keyword_density": 0.0,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Increase engagement by adding power words like 'certified', 'expert', or 'proven'",
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 40
+    },
+    {
+      "ad_data": {
+        "platform": "Bing",
+        "type": "Search Ad",
+        "title": "Online programming courses - 100% Updated Course",
+        "description": "",
+        "link": "https://www.udemy.com › Course › React",
+        "position": 4,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 7,
+          "char_count": 49,
+          "reading_level": "Difficult"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 2.0,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.11,
+          "estimated_daily_impressions": 10961,
+          "estimated_cpc_inr": 22.5,
+          "quality_score_prediction": 3.5,
+          "engagement_potential": "low"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [],
+          "target_audience": "general",
+          "competitive_advantages": []
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "online",
+            "programming",
+            "courses",
+            "updated",
+            "course"
+          ],
+          "keyword_density": 14.3,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Increase engagement by adding power words like 'certified', 'expert', or 'proven'",
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 41
+    },
+    {
+      "ad_data": {
+        "platform": "Bing",
+        "type": "Search Ad",
+        "title": "Online Training Platforms - Training Automation Software",
+        "description": "",
+        "link": "https://cloudassess.com › uk › lms",
+        "position": 5,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 7,
+          "char_count": 57,
+          "reading_level": "Difficult"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 1.0,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.05,
+          "estimated_daily_impressions": 9915,
+          "estimated_cpc_inr": 45.44,
+          "quality_score_prediction": 3.0,
+          "engagement_potential": "low"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [],
+          "target_audience": "general",
+          "competitive_advantages": []
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "training",
+            "online",
+            "platforms",
+            "automation",
+            "software"
+          ],
+          "keyword_density": 28.6,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Increase engagement by adding power words like 'certified', 'expert', or 'proven'",
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 42
+    },
+    {
+      "ad_data": {
+        "platform": "Bing",
+        "type": "Search Ad",
+        "title": "Online Coding Course - Coding Course - Largest US Tech Bootcamp",
+        "description": "",
+        "link": "https://generalassemb.ly › Software › Coding",
+        "position": 6,
+        "timestamp": "2025-08-22 11:58:11"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 11,
+          "char_count": 64,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 1.0,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.05,
+          "estimated_daily_impressions": 9587,
+          "estimated_cpc_inr": 26.18,
+          "quality_score_prediction": 3.0,
+          "engagement_potential": "low"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [],
+          "target_audience": "general",
+          "competitive_advantages": []
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "coding",
+            "course",
+            "online",
+            "largest",
+            "tech"
+          ],
+          "keyword_density": 18.2,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Increase engagement by adding power words like 'certified', 'expert', or 'proven'",
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 43
+    },
+    {
+      "ad_data": {
+        "platform": "YouTube",
+        "type": "Video",
+        "title": "Python Full Course for Beginners [2025]",
+        "description": "Master Python from scratch No fluff—just clear, practical coding skills to kickstart your journey! ❤️ Join this channel to get ...",
+        "link": "https://www.youtube.com/watch?v=K5KVEU3aaeQ",
+        "channel": "Programming with Mosh",
+        "views": 2740210,
+        "duration": "N/A",
+        "timestamp": "2025-08-22 11:58:12"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 27,
+          "char_count": 170,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 7.5,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.39,
+          "estimated_daily_impressions": 7152,
+          "estimated_cpc_inr": 27.88,
+          "quality_score_prediction": 5.6,
+          "engagement_potential": "high"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [
+            "beginner",
+            "practical"
+          ],
+          "target_audience": "beginners",
+          "competitive_advantages": [
+            "Practical Learning"
+          ]
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "python",
+            "full",
+            "course",
+            "beginners",
+            "master"
+          ],
+          "keyword_density": 11.1,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 44
+    },
+    {
+      "ad_data": {
+        "platform": "YouTube",
+        "type": "Video",
+        "title": "3 Python Practice Tools You Need to Know",
+        "description": "3 Python coding practice tools that you need to know ‍  ✨ Follow @sundaskhalidd for data science, tech, and AI educational ...",
+        "link": "https://www.youtube.com/watch?v=yENkhyGmL_c",
+        "channel": "Sundas Khalid",
+        "views": 92381,
+        "duration": "N/A",
+        "timestamp": "2025-08-22 11:58:12"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 30,
+          "char_count": 167,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Urgent"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 2.0,
+          "cta_strength": "None",
+          "urgency_level": "Medium",
+          "emotional_triggers_detected": [
+            "urgency"
+          ],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.11,
+          "estimated_daily_impressions": 7703,
+          "estimated_cpc_inr": 38.3,
+          "quality_score_prediction": 3.1,
+          "engagement_potential": "low"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [],
+          "target_audience": "general",
+          "competitive_advantages": []
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "python",
+            "practice",
+            "tools",
+            "need",
+            "know"
+          ],
+          "keyword_density": 10.0,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Increase engagement by adding power words like 'certified', 'expert', or 'proven'",
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 45
+    },
+    {
+      "ad_data": {
+        "platform": "YouTube",
+        "type": "Video",
+        "title": "Python Full Course for Beginners",
+        "description": "Learn Python for AI, machine learning, and web development with this beginner-friendly course! Get 6 months of PyCharm ...",
+        "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+        "channel": "Programming with Mosh",
+        "views": 45497954,
+        "duration": "N/A",
+        "timestamp": "2025-08-22 11:58:12"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 24,
+          "char_count": 155,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 4.5,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.24,
+          "estimated_daily_impressions": 14817,
+          "estimated_cpc_inr": 26.2,
+          "quality_score_prediction": 4.8,
+          "engagement_potential": "medium"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Mainstream",
+          "key_selling_points": [
+            "6 months",
+            "beginner",
+            "beginner"
+          ],
+          "target_audience": "beginners",
+          "competitive_advantages": []
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "python",
+            "course",
+            "full",
+            "beginners",
+            "learn"
+          ],
+          "keyword_density": 16.7,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Increase engagement by adding power words like 'certified', 'expert', or 'proven'",
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 46
+    },
+    {
+      "ad_data": {
+        "platform": "YouTube",
+        "type": "Video",
+        "title": "Python Full Course for free 🐍 (2024)",
+        "description": "python #tutorial #beginners Python tutorial for beginners' full course 2024 *Learn Python in 1 HOUR* ...",
+        "link": "https://www.youtube.com/watch?v=ix9cRaBkVe0",
+        "channel": "Bro Code",
+        "views": 5866827,
+        "duration": "N/A",
+        "timestamp": "2025-08-22 11:58:12"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 23,
+          "char_count": 141,
+          "reading_level": "Medium"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 5.0,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.26,
+          "estimated_daily_impressions": 13242,
+          "estimated_cpc_inr": 24.51,
+          "quality_score_prediction": 5.0,
+          "engagement_potential": "medium"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Budget",
+          "key_selling_points": [
+            "1 hour",
+            "beginner",
+            "beginner"
+          ],
+          "target_audience": "beginners",
+          "competitive_advantages": [
+            "Free Content"
+          ]
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "python",
+            "full",
+            "course",
+            "tutorial",
+            "beginners"
+          ],
+          "keyword_density": 26.1,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 47
+    },
+    {
+      "ad_data": {
+        "platform": "YouTube",
+        "type": "Video",
+        "title": "Python for Beginners - Learn Coding with Python in 1 Hour",
+        "description": "Learn Python basics in just 1 hour! Perfect for beginners interested in AI and coding. ⚡ Plus, get 6 months of PyCharm FREE with ...",
+        "link": "https://www.youtube.com/watch?v=kqtD5dpn9C8",
+        "channel": "Programming with Mosh",
+        "views": 22497071,
+        "duration": "N/A",
+        "timestamp": "2025-08-22 11:58:12"
+      },
+      "analysis": {
+        "basic_metrics": {
+          "word_count": 36,
+          "char_count": 190,
+          "reading_level": "Easy"
+        },
+        "sentiment_analysis": {
+          "overall_sentiment": "NEUTRAL",
+          "confidence_score": 0.5,
+          "emotional_tone": "Neutral"
+        },
+        "marketing_effectiveness": {
+          "engagement_score": 9.0,
+          "cta_strength": "None",
+          "urgency_level": "Low",
+          "emotional_triggers_detected": [],
+          "persuasion_elements": 0
+        },
+        "performance_predictions": {
+          "predicted_ctr_percent": 0.47,
+          "estimated_daily_impressions": 8406,
+          "estimated_cpc_inr": 23.94,
+          "quality_score_prediction": 6.3,
+          "engagement_potential": "high"
+        },
+        "competitive_insights": {
+          "positioning_strategy": "Budget",
+          "key_selling_points": [
+            "1 hour",
+            "1 hour",
+            "6 months",
+            "beginner",
+            "beginner"
+          ],
+          "target_audience": "beginners",
+          "competitive_advantages": [
+            "Free Content"
+          ]
+        },
+        "keyword_analysis": {
+          "primary_keywords": [
+            "python",
+            "beginners",
+            "learn",
+            "coding",
+            "hour"
+          ],
+          "keyword_density": 13.9,
+          "missing_opportunities": [
+            "certification",
+            "job guarantee",
+            "placement",
+            "internship",
+            "mentor"
+          ],
+          "seo_potential": "high"
+        },
+        "optimization_recommendations": [
+          "Strengthen call-to-action with action words like 'Start Learning Now' or 'Get Certified Today'",
+          "Add urgency with phrases like 'Limited Time Offer' or 'Enroll Today'",
+          "Include social proof like '10,000+ students' or 'Industry-recognized'",
+          "Add authority indicators like 'Expert-led' or 'Industry-certified'"
+        ]
+      },
+      "db_id": 48
+    }
+  ]
+}
